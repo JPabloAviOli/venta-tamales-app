@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Esta es una aplicación que calcula la venta realizada y permite guardar las ventas del día.
 
 Currently, two official plugins are available:
 
