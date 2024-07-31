@@ -5,10 +5,11 @@ type OrderItemProps = {
     order: OrderItem[]
     removeItem: ( id: MenuItem['id']) => void
     decreaseItem: ( id: MenuItem["id"] ) => void
+    increaseItem: ( id: MenuItem["id"] ) => void
     
 }
 
-export default function OrderItem( {order, removeItem, decreaseItem }: OrderItemProps) {
+export default function OrderItem( {order, removeItem, decreaseItem, increaseItem }: OrderItemProps) {
 
 
   return (
@@ -31,16 +32,26 @@ export default function OrderItem( {order, removeItem, decreaseItem }: OrderItem
               </div>
 
               <div className="flex flex-col">
+
                 <button 
                 onClick={ () => removeItem(item.id)} 
                 className="bg-red-600 h-8 w-8 rounded-full text-white font-black mb-2">
                   X
                 </button>
+
+                <div className="flex justify-center items-center">
                 <button 
                  onClick={() => decreaseItem( item.id )}
-                className="bg-red-600 h-8 w-8 rounded-full text-white font-black">
+                className="bg-red-600 h-8 w-8 rounded-full text-white font-black me-1">
                   -
                 </button>
+                <button 
+                 onClick={() => increaseItem( item.id )}
+                className="bg-green-600 h-8 w-8 rounded-full text-white font-black">
+                  +
+                </button>
+                </div>
+               
               </div>
             </div>
           ))

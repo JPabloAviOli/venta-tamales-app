@@ -8,7 +8,7 @@ import OrderSale from "./components/OrderSale";
 
 function App() {
 
-  const { addItem, order, removeItem, decreaseItem, total, dailySales, saveSale, dailyTotal, clearSales } = useOrder();
+  const { addItem, order, removeItem, decreaseItem, total, dailySales, saveSale, dailyTotal, clearSales, increaseItem } = useOrder();
 
   return (
     <>
@@ -36,6 +36,7 @@ function App() {
           order={order}
           removeItem={removeItem}
           decreaseItem={decreaseItem}
+          increaseItem={increaseItem}
           />
            <OrderTotals
            total={total}

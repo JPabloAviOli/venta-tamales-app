@@ -61,6 +61,24 @@ export default function useOrder() {
     setOrder(updateQuantityItem);
   };
 
+
+  const increaseItem = (id: MenuItem["id"]) => {
+    const updateQuantityItem = order.map(orderItem => {
+      if (orderItem.id === id) {
+        // Incrementa la cantidad del artículo
+        return {
+          ...orderItem,
+          quantity: orderItem.quantity + 1
+        };
+      }
+      // Retorna el item sin cambios si no coincide el id
+      return orderItem;
+    });
+  
+    // Actualiza el estado del pedido (order)
+    setOrder(updateQuantityItem);
+  };
+
   const total = order.reduce((sum, item) => {
     return sum + item.price * item.quantity;
   }, 0);
@@ -92,7 +110,8 @@ export default function useOrder() {
     dailySales,
     saveSale,
     dailyTotal,
-    clearSales
+    clearSales,
+    increaseItem
   
 
   }

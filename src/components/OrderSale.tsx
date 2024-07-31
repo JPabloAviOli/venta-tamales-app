@@ -12,7 +12,7 @@ export default function OrderSale({ dailySales, dailyTotal, clearSales} : OrderS
 
   return (
     <div className="space-y-3">
-      <h2 className="font-black text-4xl">Venta del día:</h2>
+      <h2 className="font-black text-4xl">Historial de ventas:</h2>
       {dailySales.map((sale, index) => (
         <div key={index} className="border-b border-gray-300 py-2">
           <h3 className="font-bold">Venta {index + 1}:</h3>
@@ -36,9 +36,9 @@ export default function OrderSale({ dailySales, dailyTotal, clearSales} : OrderS
       {dailySales.length !== 0 && (
         <button
           onClick={() => clearSales()}
-          className="bg-blue-600 text-white font-semibold p-2 hover:bg-blue-800 hover:ring-2 rounded-sm"
+          className="bg-green-600 text-white font-semibold p-2 hover:bg-green-800 hover:ring-2 rounded-sm"
         >
-          Eliminar venta del día
+          Eliminar historial
         </button>
       )}
     </div>
