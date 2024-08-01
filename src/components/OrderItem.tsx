@@ -14,13 +14,10 @@ export default function OrderItem( {order, removeItem, decreaseItem, increaseIte
 
   return (
     <div>
-      <h2 className="font-black text-4xl">Consumo</h2>
+      <h2 className="font-black text-4xl">Calcular venta</h2>
 
       <div className="space-y-3 mt-8">
-        { order.length === 0 ? (
-          <p className="text-center"> No hay ordenes agregadas</p>
-        ) : (
-          order.map((item) => (
+        { order.map((item) => (
             <div className="flex justify-between items-center border-gray-200 py-5 border-t last-of-type:border-b" 
             key={item.id}>
               <div>
@@ -47,15 +44,14 @@ export default function OrderItem( {order, removeItem, decreaseItem, increaseIte
                 </button>
                 <button 
                  onClick={() => increaseItem( item.id )}
-                className="bg-green-600 h-8 w-8 rounded-full text-white font-black">
+                className="bg-lime-600 h-8 w-8 rounded-full text-white font-black">
                   +
                 </button>
                 </div>
                
               </div>
             </div>
-          ))
-        )}
+          ))}
       </div>
     </div>
   )

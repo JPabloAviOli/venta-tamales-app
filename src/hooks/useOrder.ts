@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState , useEffect, useMemo} from "react";
 import { MenuItem, OrderItem, Sale } from "../types";
 
 export default function useOrder() {
@@ -79,9 +79,9 @@ export default function useOrder() {
     setOrder(updateQuantityItem);
   };
 
-  const total = order.reduce((sum, item) => {
+  const total = useMemo( () => order.reduce((sum, item) => {
     return sum + item.price * item.quantity;
-  }, 0);
+  }, 0), [order]);
 
 
   const saveSale = () => {
@@ -94,7 +94,7 @@ export default function useOrder() {
     setOrder([]); // Reset the order after saving the sale
   };
 
-  const dailyTotal = dailySales.reduce((sum, sale) => sum + sale.total, 0);
+  const dailyTotal =  useMemo( () => dailySales.reduce((sum, sale) => sum + sale.total, 0), [dailySales]);
 
   const clearSales = () => {
     setDailySales([])

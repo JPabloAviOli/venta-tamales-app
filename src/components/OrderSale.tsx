@@ -36,7 +36,7 @@ export default function OrderSale({ dailySales, dailyTotal, clearSales} : OrderS
       {dailySales.length !== 0 && (
         <button
           onClick={() => clearSales()}
-          className="bg-green-600 text-white font-semibold p-2 hover:bg-green-800 hover:ring-2 rounded-sm"
+          className="bg-lime-600 text-white w-full font-semibold p-2 hover:bg-lime-800 hover:ring-2 rounded-sm"
         >
           Eliminar historial
         </button>

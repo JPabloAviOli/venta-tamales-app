@@ -17,39 +17,37 @@ function App() {
       </header>
       <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-3">
         <div className="p-5">
-
           <h2 className="text-4xl font-black">Menú</h2>
           <div className="space-y-3 mt-8">
-          {menuItems.map((item) => (
-              <MenuItem 
-              key={item.id} 
-              item={item} 
-              addItem={addItem}
-              />  
+            {menuItems.map((item) => (
+              <MenuItem key={item.id} item={item} addItem={addItem} />
             ))}
           </div>
-
         </div>
         <div className="border border-dashed border-lime-100 p-5 rounded-lg space-y-8">
-          
-          <OrderItem
-          order={order}
-          removeItem={removeItem}
-          decreaseItem={decreaseItem}
-          increaseItem={increaseItem}
-          />
-           <OrderTotals
-           total={total}
-           saveSale={saveSale}
-
-          />
+          {order.length > 0 ? (
+            <>
+              <OrderItem
+                order={order}
+                removeItem={removeItem}
+                decreaseItem={decreaseItem}
+                increaseItem={increaseItem}
+              />
+              <OrderTotals total={total} saveSale={saveSale} />
+            </>
+          ) : (
+            <p className="text-center font-bold">¡Selecciona un producto y empieza a calcular!</p>
+          )}
         </div>
         <div className="border md:ml-4 mt-5 md:mt-0 border-dashed border-lime-100 p-5 rounded-lg space-y-8">
-          <OrderSale
-            dailySales={dailySales}
-            dailyTotal={dailyTotal}
-            clearSales={clearSales}
-          />
+          {dailySales.length > 0 && (
+            <OrderSale
+              dailySales={dailySales}
+              dailyTotal={dailyTotal}
+              clearSales={clearSales}
+            />
+
+          )}
         </div>
       </main>
     </>
