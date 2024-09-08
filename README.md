@@ -42,3 +42,50 @@ El negocio consiste en que una persona vende tamales y otra atole, y cada una ti
    ```bash
    npm run dev
 
+## Desafíos y Aprendizaje
+
+### Adaptación de la Interfaz
+
+El principal desafío fue adaptar una interfaz de un curso a las necesidades del negocio de mi familiar, ajustando componentes y simplificando el diseño para facilitar su uso por personas sin conocimientos técnicos.
+
+**Aprendizajes**:
+- Personalización de componentes con React y Tailwind CSS.
+- Implementación de lógica de negocio específica.
+- Optimización de la experiencia de usuario en dispositivos móviles.
+
+### Tipado en TypeScript
+
+Implementar TypeScript para asegurar la estabilidad del código y evitar errores comunes en la lógica de ventas.
+
+**Aprendizajes**:
+- Uso de TypeScript para mejorar la seguridad y mantenibilidad del código.
+- Manejo de tipado en funciones y componentes.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una rama para tu feature o bug fix (`git checkout -b feature/mi-feature`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadida nueva feature'`).
+4. Push a la rama (`git push origin feature/mi-feature`).
+5. Abre un pull request.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
+
+## Autor
+
+- **Jesús Pablo Avila Olivar** - Autor principal [LinkedIn](https://www.linkedin.com/in/pablo-avila-olivar/)
+
+## Enlaces Útiles
+
+- **[Documentación de React](https://reactjs.org/docs/getting-started.html)**: Documentación oficial para React, útil para entender cómo funciona y cómo utilizar sus características.
+- **[Tailwind CSS](https://tailwindcss.com/docs/installation)**: Guía de instalación y uso de Tailwind CSS para estilizar la aplicación.
+- **[Vite](https://vitejs.dev/)**: Documentación oficial de Vite, el bundler utilizado para construir la aplicación.
+- **[TypeScript](https://www.typescriptlang.org/docs/)**: Documentación para aprender y aplicar TypeScript en el proyecto.
+- **[Netlify](https://docs.netlify.com/)**: Guía y documentación sobre cómo desplegar aplicaciones en Netlify.
+
+
+
