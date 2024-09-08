@@ -81,7 +81,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## Enlaces Útiles
 
-- **[Documentación de React](https://reactjs.org/docs/getting-started.html)**: Documentación oficial para React, útil para entender cómo funciona y cómo utilizar sus características.
+- **[Documentación de React](https://reactdev)**: Documentación oficial para React, útil para entender cómo funciona y cómo utilizar sus características.
 - **[Tailwind CSS](https://tailwindcss.com/docs/installation)**: Guía de instalación y uso de Tailwind CSS para estilizar la aplicación.
 - **[Vite](https://vitejs.dev/)**: Documentación oficial de Vite, el bundler utilizado para construir la aplicación.
 - **[TypeScript](https://www.typescriptlang.org/docs/)**: Documentación para aprender y aplicar TypeScript en el proyecto.
