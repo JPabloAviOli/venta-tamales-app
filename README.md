@@ -6,6 +6,11 @@ Esta es una interfaz sencilla desarrollada con React, Tailwind CSS, Vite y TypeS
 
 El negocio consiste en que una persona vende tamales y otra atole, y cada una tiene sus propias ganancias. Con esta aplicación, pueden calcular las ventas de cada uno, registrar lo vendido durante el día y llevar un control preciso de las ganancias.
 
+# Sistema de Gestión de Ventas - Desplegada en netlify
+
+[**Demo en vivo**](https://tamales-la-guerita.netlify.app/)
+
+
 ## Características Principales
 
 - **Registro de ventas**: La aplicación permite registrar las ventas diarias, diferenciando entre tamales y atoles.
@@ -24,6 +29,16 @@ El negocio consiste en que una persona vende tamales y otra atole, y cada una ti
 
 1. **Clona este repositorio**:
    ```bash
-   git clone https://github.com/tuusuario/nombre-del-repositorio.git
+   git clone https://github.com/JPabloAviOli/venta-tamales-app.git
 
+2. **Accede al directorio del proyecto o abrelo en tu IDE preferido**:
+   ```bash
+   cd venta-tamales-app
+   
+3. **Instala las dependencias**
+   ```bash
+   npm install
+4. **Inicia la aplicación en modo desarrollo**
+   ```bash
+   npm run dev
 
