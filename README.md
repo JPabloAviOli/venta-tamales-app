@@ -1,30 +1,29 @@
-# React + TypeScript + Vite + Tailwind CSS
+# Sistema de Gestión de Ventas - Tamales y Atole
 
-## Esta es una aplicación que calcula la venta realizada y permite guardar las ventas del día.
+## Descripción
 
-Currently, two official plugins are available:
+Esta es una interfaz sencilla desarrollada con React, Tailwind CSS, Vite y TypeScript, creada para ayudar a un familiar que tenía problemas para gestionar las ventas en su negocio de tamales y atoles. Anteriormente, llevaban el registro en papel, lo que dificultaba conocer con precisión cuánto vendían y qué productos se vendían.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El negocio consiste en que una persona vende tamales y otra atole, y cada una tiene sus propias ganancias. Con esta aplicación, pueden calcular las ventas de cada uno, registrar lo vendido durante el día y llevar un control preciso de las ganancias.
 
-## Expanding the ESLint configuration
+## Características Principales
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Registro de ventas**: La aplicación permite registrar las ventas diarias, diferenciando entre tamales y atoles.
+- **Cálculo automático**: La aplicación calcula automáticamente el total de ventas de cada producto.
+- **Historial de ventas**: Las ventas se guardan y pueden ser revisadas para obtener un resumen total al final del día.
+- **Interfaz amigable**: La aplicación tiene una interfaz simple y fácil de usar, optimizada para dispositivos móviles.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologías Utilizadas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React**: Para la construcción de la interfaz de usuario.
+- **Tailwind CSS**: Para el diseño y estilos de la aplicación.
+- **Vite**: Para la configuración y compilación del proyecto.
+- **TypeScript**: Para añadir tipado estático y mejorar la mantenibilidad del código.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalación y Ejecución
+
+1. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/tuusuario/nombre-del-repositorio.git
+
+
